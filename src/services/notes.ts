@@ -1,7 +1,9 @@
 const BASE_URL = "https://codeable-keep-api-production.up.railway.app/api";
 
 export const getNotes = async (username) => {
+
     const url = `${BASE_URL}/${username}/notes`
+    console.log('url ',url )
     const response = await fetch(url)
     if (response.ok) {
         const data = await response.json()

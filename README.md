@@ -21,13 +21,13 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 ### Doing
 
-7. User can see notes list
 
 ### Done
 
 1. User can log in using a username
 2. User can access the main view
 3. User sees a message when no notes are available
+7. User can see notes list
 
 ## Optional Requirements
 

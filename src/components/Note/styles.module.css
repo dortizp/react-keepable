@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.title {
+  font-weight: 700;
+}
+.body {
+  font-weight: 400;
+}
+.rowContainer {
+  display: flex;
+  gap: 5px;
+}
