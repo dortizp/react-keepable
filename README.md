@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Codeable Keep (Keepable)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Codeable Keep is a Single Page Application inspired by Google Keep. Users can create, organize, and manage notes with custom colors and various features, including pinning and editing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Mandatory Requirements
 
-## Expanding the ESLint configuration
+### To Do
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. User can log in using a username
+2. User can access the main view
+3. User sees a message when no notes are available
+4. User can view a form to create a new note
+5. User can add a new note
+6. User can select a custom color for a new note
+7. User can see notes list
+8. User can change the color of a note
+9. User can delete a note
+10. User can see a sidebar
+11. User can see deleted notes in trash view
+12. User can permanently delete a note
+13. User can restore a deleted note from the trash
+14. User can logout
 
-- Configure the top-level `parserOptions` property like this:
+### Doing
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+_No tasks are currently in progress_
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Done
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+_No tasks are completed yet_
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Optional Requirements
+
+### To Do
+
+15. User can edit a note
+16. User can pin a note
+17. User can see pinned notes grouped together
+
+### Doing
+
+_No tasks are currently in progress_
+
+### Done
+
+_No tasks are completed yet_
+
+# Use
+
+```bash
+npm install # Install the required dependecies
+npm run dev # Start the development server
 ```
