@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import WelcomePage from "./components/WelcomePage";
 import NotesPage from "./components/NotesPage";
 function App() {
