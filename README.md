@@ -8,8 +8,6 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 ### To Do
 
-1. User can log in using a username
-2. User can access the main view
 3. User sees a message when no notes are available
 4. User can view a form to create a new note
 5. User can add a new note
@@ -25,11 +23,11 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 ### Doing
 
-_No tasks are currently in progress_
+1. User can log in using a username
 
 ### Done
 
-_No tasks are completed yet_
+2. User can access the main view
 
 ## Optional Requirements
 
