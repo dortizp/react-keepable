@@ -32,3 +32,15 @@ export const createNote = async (username, noteData) => {
     return error.message || "There was an error";
   }
 };
+
+export const deleteNote = async (username, noteId) => {
+  const url = `${BASE_URL}/${username}/notes/${noteId}`;
+  const options = {
+    method: "DELETE",
+  };
+  const response = await fetch(url, options);
+  if (!response.ok) {
+    const error = await response.json();
+    return error.message || "There was an error";
+  }
+};

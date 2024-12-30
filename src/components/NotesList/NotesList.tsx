@@ -1,7 +1,8 @@
 import Note from "../Note/Note";
 import styles from "./styles.module.css"
 
-const NotesList = ({ notes }) => {
+const NotesList = ({ notes , username}) => {
+  console.log('notes ',notes )
   const note = {
     title: "title",
     body: "body",
@@ -11,7 +12,8 @@ const NotesList = ({ notes }) => {
     <div className={styles.container}>
       {notes.length > 0 &&
         notes.map((note) => (
-          <Note key={note.id} title={note.title} body={note.body} color={note.color} />
+          <Note key={note.id} id={note.id}
+            title={note.title} body={note.body} color={note.color} username={username} />
         ))}
     </div>
   );

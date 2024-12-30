@@ -27,7 +27,7 @@ const NotesPage = ({ username, onLogout }) => {
         <div className={styles.main}>
           <NoteForm />
           {notes.length > 0 ? (
-            <NotesList notes={notes} />
+            <NotesList notes={notes} username={username}/>
           ) : (
             "There are no notes yet"
           )}
