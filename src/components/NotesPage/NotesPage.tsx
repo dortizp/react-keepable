@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import NotesList from "../NotesList";
 import { getNotes } from "../../services/notes";
+import NoteForm from "../NoteForm/NoteForm";
 
 const NotesPage = ({ username , onLogout}) => {
   const [notes, setNotes] = useState([]);
@@ -20,6 +21,7 @@ const NotesPage = ({ username , onLogout}) => {
   return (
     <div className={styles.container}>
       <Header username={username} onLogout={onLogout} />
+      <NoteForm />
       {notes.length > 0 ? (
         <NotesList notes={notes} />
       ) : (
