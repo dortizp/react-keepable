@@ -8,7 +8,6 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 ### To Do
 
-5. User can add a new note
 6. User can select a custom color for a new note
 8. User can change the color of a note
 9. User can delete a note
@@ -20,6 +19,7 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 ### Doing
 
+5. User can add a new note
 
 ### Done
 

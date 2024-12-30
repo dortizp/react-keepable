@@ -1,5 +1,6 @@
 import styles from "./styles.module.css";
 import { useState } from "react";
+import { createNote } from "../../services/notes";
 
 const NoteForm = () => {
   const initialFormData = {
@@ -12,6 +13,14 @@ const NoteForm = () => {
   const handleChange = (e) => {
     console.log('form field to change',e.target.name)
     setFormData((prev) => ({...prev, [e.target.name] : e.target.value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    console.log('formData',formData)
+    const data = await createNote('david', formData)
+    console.log('data ',data )
+
   }
 
   return (
@@ -34,7 +43,7 @@ const NoteForm = () => {
         ></textarea>
         <div className={styles.rowContainer}>
           <span>color</span>
-          <button>Keep it!</button>
+          <button onClick={handleSubmit}>Keep it!</button>
         </div>
       </div>
     </form>
