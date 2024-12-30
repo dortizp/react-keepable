@@ -3,7 +3,7 @@ import { useState } from "react";
 import { createNote } from "../../services/notes";
 import ColorPicker from "../ColorPicker/ColorPicker";
 
-const NoteForm = () => {
+const NoteForm = ({onFetchNotes}) => {
   const initialFormData = {
     title: "",
     body: "",
@@ -21,6 +21,7 @@ const NoteForm = () => {
     console.log('formData',formData)
     const data = await createNote('david', formData)
     console.log('data ',data )
+    onFetchNotes()
   }
 
   const handlePickColor = (e) => {

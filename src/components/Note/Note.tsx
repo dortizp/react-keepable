@@ -1,9 +1,10 @@
 import styles from "./styles.module.css";
 import { deleteNote } from "../../services/notes";
 
-const Note = ({ id, title, body, color, username }) => {
+const Note = ({ id, title, body, color, username, onFetchNotes }) => {
   const handleDelete = async () => {
     await deleteNote(username, id);
+    await onFetchNotes()
   };
   return (
     <div className={styles.container} style={{ backgroundColor: color }}>

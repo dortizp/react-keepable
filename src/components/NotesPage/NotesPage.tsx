@@ -25,9 +25,9 @@ const NotesPage = ({ username, onLogout }) => {
       <div className={styles.body}>
         <Sidebar/>
         <div className={styles.main}>
-          <NoteForm />
+          <NoteForm onFetchNotes={fetchNotes} />
           {notes.length > 0 ? (
-            <NotesList notes={notes} username={username}/>
+            <NotesList notes={notes} username={username} onFetchNotes={fetchNotes}/>
           ) : (
             "There are no notes yet"
           )}
