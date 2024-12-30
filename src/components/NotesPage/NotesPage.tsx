@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import NotesList from "../NotesList";
 import { getNotes } from "../../services/notes";
 import NoteForm from "../NoteForm/NoteForm";
+import Sidebar from "../Sidebar";
 
-const NotesPage = ({ username , onLogout}) => {
+const NotesPage = ({ username, onLogout }) => {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
@@ -21,12 +22,17 @@ const NotesPage = ({ username , onLogout}) => {
   return (
     <div className={styles.container}>
       <Header username={username} onLogout={onLogout} />
-      <NoteForm />
-      {notes.length > 0 ? (
-        <NotesList notes={notes} />
-      ) : (
-        "There are no notes yet"
-      )}
+      <div className={styles.body}>
+        <Sidebar/>
+        <div className={styles.main}>
+          <NoteForm />
+          {notes.length > 0 ? (
+            <NotesList notes={notes} />
+          ) : (
+            "There are no notes yet"
+          )}
+        </div>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,6 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 
 8. User can change the color of a note
 9. User can delete a note
-10. User can see a sidebar
 11. User can see deleted notes in trash view
 12. User can permanently delete a note
 13. User can restore a deleted note from the trash
@@ -28,6 +27,7 @@ Codeable Keep is a Single Page Application inspired by Google Keep. Users can cr
 5. User can add a new note
 6. User can select a custom color for a new note
 7. User can see notes list
+10. User can see a sidebar
 
 ## Optional Requirements
 
