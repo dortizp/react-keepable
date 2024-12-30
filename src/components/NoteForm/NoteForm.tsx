@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import { useState } from "react";
 import { createNote } from "../../services/notes";
+import ColorPicker from "../ColorPicker/ColorPicker";
 
 const NoteForm = () => {
   const initialFormData = {
@@ -20,7 +21,14 @@ const NoteForm = () => {
     console.log('formData',formData)
     const data = await createNote('david', formData)
     console.log('data ',data )
+  }
 
+  const handlePickColor = (e) => {
+    const element = e.target
+    console.log('element',element)
+    const colorSelected = element.getAttribute("name")
+    console.log('colorSelected', colorSelected)
+    setFormData((prev) => ({...prev, color: colorSelected}))
   }
 
   return (
@@ -43,6 +51,7 @@ const NoteForm = () => {
         ></textarea>
         <div className={styles.rowContainer}>
           <span>color</span>
+          <ColorPicker onPickColor={handlePickColor}/>
           <button onClick={handleSubmit}>Keep it!</button>
         </div>
       </div>
